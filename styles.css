@@ -1,28 +1,11 @@
-.content {
-  /* this is needed or the background will be offset by a few pixels at the top */
-  overflow: auto;
-  position: relative;
-}
-
-.content::before {
-  content: "";
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: -1;
-
-  display: block;
+body{
   background-image: url('bg_image.jpg');
-  background-size:cover;
-  width: 100%;
-  height: 100%;
-
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; 
 }
+
 
 h1 {
     color: white;
@@ -73,7 +56,7 @@ nav {
   }
 
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     nav {
       flex-direction: column;
     }
