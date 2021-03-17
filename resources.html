@@ -23,11 +23,16 @@
     <div>
         <div class="column-left">
             <h2>PointNet</h2>
-            <section>
+            <article>
                 <p>
-                    PointNet description here...
+                    PointNet is a NN architesture that operates on point clouds instead of more conventional data.
+                    Its main goal is to be invariant to input ordering, which requires it to only use symetric functions.
+                    Architecture also aims to be invatiant to certain geometric transformations.
+
+                    It is a foundation for other architectures that came afterwards and is in general mech better than solutions that came before that aimed
+                    to either voxelize to volume or project pointclouds into 2D views.
                 </p>
-            </section>
+            </article>
         </div>
         <div class="column-right">
             <p>
@@ -39,12 +44,15 @@
     <!-- 3dAAE -->
     <div>
         <div class="column-left">
-            <h2>3D Adversarial Autoencoders</h2>
-            <section>
+            <h2>Adversarial Autoencoders for Compact Representations of 3D Point Clouds</h2>
+            <article>
                 <p>
-                    3DAAE description here...
+                    3D Adversarial Autoencoder encodes input to a latent space using PointNet as an encoder
+                    and decodes the latent space trying to be as close to identity function as possible.
+                    Contrary to more traditional GAN latent space is meant to represent probability distrubution.
+                    This allows user to sample from latent space and achive never seen point clouds (like new, made up chairs).
                 </p>
-            </section>
+            </article>
         </div>
         <div class="column-right">
             <p>
