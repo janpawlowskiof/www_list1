@@ -12,7 +12,7 @@ body{
 }
 
 
-h2 {
+h2, h6 {
     color: whitesmoke;
     text-align: left;
 }
@@ -95,10 +95,6 @@ footer {
 
 footer p {
   font-size: 18px;
-}
-
-iframe {
-  frameborder: 0px
 }
 
 @media screen and (max-width: 800px) {
