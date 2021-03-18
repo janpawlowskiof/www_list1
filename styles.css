@@ -85,7 +85,7 @@ section {
 }
 
 footer {
-  /* min-height: 70px; */
+  min-height: 70px;
   margin-top: auto;
   text-align: center;
   padding: 3px;
