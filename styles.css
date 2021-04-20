@@ -12,6 +12,14 @@ body{
 }
 
 
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+
 h2, h6 {
     color: whitesmoke;
     text-align: left;
@@ -60,6 +68,15 @@ nav a {
 nav a.logo {
   font-size: 35px;
   font-weight: bold;
+  display: block;
+}
+
+nav a.icon {
+  background: rgba(122, 122, 122, 1.0);;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 nav a:hover {
@@ -105,6 +122,12 @@ footer p {
   nav a {
     text-align: left;
     width: 95%;
+    display: none;
+  }
+
+  nav a.icon {
+    width: unset;
+    display: block;
   }
 }
 

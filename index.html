@@ -5,19 +5,24 @@
     <meta charset="UTF-8">
     <title>Jan Pawłowski - Mini portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header>
+    <div class="topnav">
         <nav>
-            <a href="index.html" class="logo">Jan Pawłowski<br>
+            <a href="javascript:void(0);" class="icon" onclick="toggleHamburger()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" class="logo">
+                Jan Pawłowski<br>
                 <hr>Mini portfolio
             </a>
             <a class="active" href="index.html">Home</a>
             <a class="inactive" href="projects.html">Projects</a>
             <a class="inactive" href="resources.html">Resources</a>
         </nav>
-    </header>
+    </div>
 
     <div>
         <div class="column-left">
@@ -59,5 +64,6 @@
         <p>All rights reserved.</p>
     </footer>
 </body>
+<script src="script.js"></script>
 
 </html>
