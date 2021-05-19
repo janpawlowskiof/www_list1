@@ -9,21 +9,7 @@
 </head>
 
 <body>
-    <div class="topnav">
-        <nav>
-            <a href="javascript:void(0);" class="icon" onclick="toggleHamburger()">
-                <i class="fa fa-bars"></i>
-            </a>
-            <a href="index.html" class="logo">
-                Jan Pawłowski<br>
-                <hr>Mini portfolio
-            </a>
-            <a class="active" href="index.html">Home</a>
-            <a class="inactive" href="projects.html">Projects</a>
-            <a class="inactive" href="resources.html">Resources</a>
-        </nav>
-    </div>
-
+    <?php include 'header.php';?>
     <div>
         <div class="column-left">
             <section>
@@ -59,10 +45,7 @@
         </div>
     </div>
 
-    <footer>
-        <p>Jan Pawłowski's Mini-portfolio</p>
-        <p>All rights reserved.</p>
-    </footer>
+    <?php include 'footer.php';?>
 </body>
 <script src="script.js"></script>
 
