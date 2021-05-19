@@ -1,3 +1,5 @@
+<?php include 'meta.php';?>
+
 <?php 
     $visits_file = fopen("visits.txt", "r");
     $serialized_array = fread($visits_file, 5000);

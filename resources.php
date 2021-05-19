@@ -2,22 +2,12 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Jan Pawłowski - Resources</title>
-    <link rel="stylesheet" href="styles.css">
+<?php include 'meta.php';?>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">Jan Pawłowski<br>
-                <hr>Mini portfolio
-            </a>
-            <a class="inactive" href="index.html">Home</a>
-            <a class="inactive" href="projects.html">Projects</a>
-            <a class="active" href="resources.html">Resources</a>
-        </nav>
-    </header>
+    <?php include 'header.php';?>
+    <?php printHeader('resources');?>
 
     <!-- PointNet -->
     <div>
@@ -61,10 +51,7 @@
         </div>
     </div>
 
-    <footer>
-        <p>Jan Pawłowski's Mini-portfolio</p>
-        <p>All rights reserved.</p>
-    </footer>
+    <?php include 'footer.php';?>
 </body>
 
 </html>
