@@ -1,0 +1,138 @@
+body {
+  background-image: url("bg_image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+main_element_style, h2, h6, p, li, hr, nav a, footer {
+  color: whitesmoke;
+  text-align: left;
+  font-family: verdana;
+}
+
+p, li {
+  font-size: 28px;
+}
+
+nav {
+  overflow: hidden;
+  background-color: rgba(117, 117, 117, 0.8);
+  padding: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+hr {
+  width: 98%;
+}
+
+nav a {
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 28px;
+  line-height: 25px;
+  border-radius: 4px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+nav a.logo {
+  font-size: 35px;
+  font-weight: bold;
+  display: block;
+}
+
+nav a.icon {
+  background: rgba(122, 122, 122, 0.8);
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+nav a:hover {
+  background-color: #999;
+  color: white;
+}
+
+nav a.active {
+  background-color: #7b7;
+  color: white;
+}
+
+section {
+  background-color: rgba(117, 117, 117, 0.8);
+}
+
+footer {
+  min-height: 70px;
+  margin-top: auto;
+  text-align: center;
+  padding: 3px;
+  background-color: rgba(117, 117, 117, 0.8);
+}
+
+footer p {
+  font-size: 18px;
+}
+
+img {
+  float: right;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav a {
+    text-align: left;
+    width: 95%;
+  }
+  nav a.icon {
+    width: unset;
+    display: block;
+  }
+}
+
+.column-left, .column-right {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .column-left, .column-right {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

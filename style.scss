@@ -1,0 +1,142 @@
+$background-image: url('bg_image.jpg');
+$big-font-size: 35px;
+$medium-font-size: 28px;
+$small-font-size: 18px;
+$font: verdana;
+$background-color: rgba(117, 117, 117, 0.8);
+$background-color-light: rgba(122, 122, 122, 0.8);
+$background-color-hightlight: #999;
+$background-color-active: #7b7;
+
+body{
+    background-image: $background-image;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; 
+    box-sizing: border-box;
+    display:flex; 
+    flex-direction:column; 
+    height:100%;
+    margin:0;
+  }
+
+main_element_style {
+    color: whitesmoke;
+    text-align: left;
+    font-family: $font;
+}
+
+h2, h6 {
+    @extend main_element_style;
+}
+
+p, li {
+    @extend main_element_style;
+    font-size: $medium-font-size;
+}
+
+nav {
+    overflow: hidden;
+    background-color: $background-color;
+    padding: 20px 10px;
+    display:flex;
+    flex-direction: row;
+}
+
+hr {
+    @extend main_element_style;
+    width: 98%;  
+}
+
+nav a {
+    @extend main_element_style;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: $medium-font-size;
+    line-height: 25px;
+    border-radius: 4px;
+    align-self: center;
+}
+
+nav a.logo {
+    font-size: $big-font-size;
+    font-weight: bold;
+    display: block;
+  }
+  
+  nav a.icon {
+    background: $background-color-light;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  nav a:hover {
+    background-color: $background-color-hightlight;
+    color: white;
+  }
+  
+  nav a.active {
+    background-color: $background-color-active;
+    color: white;
+  }  
+
+
+section {
+    background-color: $background-color;
+}
+
+footer {
+    @extend main_element_style;
+    min-height: 70px;
+    margin-top: auto;
+    text-align: center;
+    padding: 3px;
+    background-color: $background-color;
+}
+
+footer p {
+    font-size: $small-font-size;
+}
+
+img {
+    float: right;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+@media screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: left;
+        width: 95%;
+    }
+
+    nav a.icon {
+        width: unset;
+        display: block;
+    }
+}
+
+.column-left, .column-right {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    .column-left, .column-right {
+        width: 100%;
+    }
+}
+
